@@ -1,0 +1,225 @@
+@import "./init.css";
+
+body {
+  background-color: #282828;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 340px;
+  color: white;
+}
+
+/* ==================<Container>=============== */
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+}
+
+/*=====================header======================*/
+header {
+  padding-top: 20px;
+  width: 100%;
+  position: static;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  font-size: 35px;
+}
+
+.header_logo a {
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+
+  transition: color .2s linear;
+}
+
+.header_logo a:hover{
+  color: #a3a3a3;
+  text-shadow: 2px 2px 0 black;
+}
+
+/*====================nav========================*/
+.nav {
+  font-size: 26px;
+}
+
+.nav_link {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+  transition: color .2s linear;
+}
+
+.nav_link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #a3a3a3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+
+  transition: opacity .2s linear;
+}
+
+.nav_link:hover::after {
+  opacity: 1;
+}
+
+.nav_link:hover {
+  color: #a3a3a3;
+  text-shadow: 2px 2px 0 black;
+}
+
+/*==================main===================*/
+.wrap_info {
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.wrap_info:hover {
+  box-shadow: 3px 3px 5px black;
+}
+
+.wrap_info::before {
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url(../img/back_4.jpg)
+  center no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.info {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1:after {
+  content:"";
+  width: 15%;
+  height: 3px;
+  display: block;
+  background-color: #FFF;
+  margin: 10px auto 20px;
+}
+
+.wrap_contacts{
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.wrap_contacts:hover {
+  box-shadow: 3px 3px 5px black;
+}
+
+.wrap_contacts::before {
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url(../img/back_5.jpg)
+  center no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+h2 {
+  margin: 20px auto;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts_unit {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.contact_type {
+  font-size: 20px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.unit_link {
+  margin: 20px auto;
+  list-style-type: none;
+  text-align: center;
+  transition: color .2s linear;
+}
+
+.unit_link a{
+  color: #FFF;
+}
+
+.unit_link:hover a{
+  color: #a3a3a3;
+}
+
+.unit_link:hover {
+  color: #a3a3a3;
+  text-shadow: 2px 2px 0 black;
+}
+
+.info p span {
+  font-family: 'Comfortaa', cursive;
+  text-shadow: 2px 2px 2px black;
+  color: pink;
+  font-style: italic;
+}
+
+/*===============media==================*/
+@media screen and (max-width: 600px) {
+  .contacts_list {
+    flex-direction: column;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}

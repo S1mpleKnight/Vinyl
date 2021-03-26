@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*::after, *::before {box-sizing: border-box;}
+:focus, :active, a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+}
+input, button, textarea {font-family: inherit;}
+button {cursor: pointer;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
