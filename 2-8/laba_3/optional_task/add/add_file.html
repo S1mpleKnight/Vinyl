@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить файл</title>
+</head>
+<body>
+    <main>
+        <form action="add_file.php" enctype="multipart/form-data" method="post">
+            <label for="file">Файл для загрузки:
+                <input type="file" id="file" name="file">
+            </label><br><br>
+            <label for="dir">Куда сохранить:
+                <input type="text" id="dir" name="dir">
+            </label><br><br>
+            <input type="submit" name="u_button" value="Загрузить">
+        </form>
+        <br>
+        <a href="../index.html" style="text-decoration: none">Вернуться</a>
+    </main>
+</body>
+</html>

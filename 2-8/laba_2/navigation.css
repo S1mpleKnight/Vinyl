@@ -1,0 +1,29 @@
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__inner a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.nav__menu a {
+    margin: 0 10px;
+}
+
+.main__input {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.main__input form {
+    margin: 20px auto 0;
+}

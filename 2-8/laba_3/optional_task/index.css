@@ -1,0 +1,12 @@
+main {
+    margin: 0 auto;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+}
+
+.main__link{
+    font-size: 30px;
+    text-decoration: none;
+}
